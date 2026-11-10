@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pass – Gym Progress Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <header>
+    <h1>Gym Progress Tracker</h1>
+    <nav>
+      <a href="dashboard.html">Översikt</a>
+      <a href="log-workout.html">Logga pass</a>
+      <a href="progress.html">Utveckling</a>
+      <a href="logout.php">Logga ut</a>
+    </nav>
+  </header>
+
+  <main>
+    <p><a href="dashboard.html">&larr; Tillbaka till översikten</a></p>
+
+    <article>
+      <header>
+        <h2 id="workout-name">Passnamn</h2>
+        <p>Datum: <time id="workout-date" datetime="2026-09-28">2026-09-28</time></p>
+      </header>
+
+      <section class="exercise">
+        <h3>Övningsnamn</h3>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Set</th>
+              <th>Vikt (kg)</th>
+              <th>Reps</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>60</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>60</td>
+              <td>7</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <p id="empty-message">Inga övningar loggade för det här passet.</p>
+    </article>
+
+  </main>
+
+  <footer>
+    <p>Gymnasiearbete – Teknikprogrammet</p>
+  </footer>
+
+</body>
+</html>

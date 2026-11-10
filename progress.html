@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Utveckling – Gym Progress Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <header>
+    <h1>Gym Progress Tracker</h1>
+    <nav>
+      <a href="dashboard.html">Översikt</a>
+      <a href="log-workout.html">Logga pass</a>
+      <a href="progress.html">Utveckling</a>
+      <a href="logout.php">Logga ut</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Din utveckling</h2>
+
+    <form action="" method="get">
+      <label for="exercise_id">Välj övning</label>
+      <select id="exercise_id" name="exercise_id">
+        
+        <option value="1">Bänkpress</option>
+        <option value="2">Knäböj</option>
+      </select>
+      <button type="submit">Visa</button>
+    </form>
+
+    <section>
+      <h3>Vikt över tid</h3>
+
+      
+      <canvas id="progress-chart" width="600" height="300"></canvas>
+
+      <p id="empty-message">Ingen data att visa för den här övningen än.</p>
+    </section>
+
+    <section>
+      <h3>Sammanfattning</h3>
+      <dl>
+        <dt>Tyngsta vikt</dt>
+        <dd id="stat-max-weight">–</dd>
+        <dt>Antal pass</dt>
+        <dd id="stat-workout-count">–</dd>
+      </dl>
+    </section>
+  </main>
+
+  <footer>
+    <p>Gymnasiearbete – Teknikprogrammet</p>
+  </footer>
+
+</body>
+</html>
