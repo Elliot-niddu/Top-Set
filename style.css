@@ -1,9 +1,14 @@
 body {
     text-align: center;
+    background-color: black;
 }
 
 label {
     display: inline-block;
     width: 120px;
     text-align: right;
+}
+
+header {
+    background-color: red;
 }
