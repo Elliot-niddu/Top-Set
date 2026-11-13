@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    background-color: black;
+    background-color: white;
 }
 
 label {
@@ -10,5 +10,22 @@ label {
 }
 
 header {
-    background-color: red;
+    background-color: rgb(192, 24, 24);
+    height: 150px;
+    
+}
+
+header a {
+    color:black;
+}
+
+.login-form button {
+    background-color: rgb(192, 24, 24); 
+    color: black;
+    padding: 5px 15px; /* Storlek */
+    border: none; /* Tar bort kanten */
+    border-radius: 0px; /* Rundade hörn */
+    font-size: 16px; 
+    cursor: pointer; /* Muspekaren blir en hand */
+    margin :10px; /* Lägger till lite utrymme runt knappen */
 }
